@@ -31,16 +31,23 @@ def open_url(re_get):
         info['总价'] = re.findall(re_digit, soup.select('.total')[0].text)[0]
         info['每平方售价'] = re.findall(re_digit, soup.select('.unitPriceValue')[0].text)[0]
         info['所在区域'] = soup.select('.areaName')[0].select('.info')[0].text[:5].split()
+        info['链接'] = re_get
         return info
 
-def main():
+def filter_info(demensions=0.0, downpayment=20.0):
     user_in_num = 36
+    info_counter = 0
     for i in generate_allurl(user_in_num):
-        re_gets =  get_allurl(i)
+        re_gets = get_allurl(i)
         for re_get in re_gets:
             info = open_url(re_get)
-            if float(info['总价'])*0.3 < 21.1:
-                print(info)
+            if float(info['总价']) * 0.3 < downpayment:
+                if float(info['面积']) > demensions:
+                    info_counter += 1
+                    print(str(info_counter) + '.' + str(info))
+
+def main():
+    filter_info(75.0)
 
 if __name__ == "__main__":
     main()

@@ -3,7 +3,7 @@ import smtplib
 from email.header import Header
 mailInfo = {
     "from": '357594634@qq.com',
-    "to": 'junliang_zhong@163.com',
+    "to": ['junliang_zhong@163.com','huanhuan.liu@ericsson.co'],
     "hostname": 'smtp.qq.com',
     "username": '357594634@qq.com',
     "password": 'sycvoaenwndabibf',

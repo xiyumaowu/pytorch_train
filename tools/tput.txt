@@ -1,0 +1,240 @@
+[284]  0.0- 1.0 sec  0.00 Bytes  0.00 bits/sec  0.000 ms 1330380908/    0 (1.$%)
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[284]  0.0- 1.0 sec  1.25 KBytes  10.2 Kbits/sec  0.000 ms 1700027507/    1 (1.7e+011%)
+[284]  1.0- 2.0 sec  1.25 KBytes  10.2 Kbits/sec  19.967 ms    0/    1 (0%)
+[284]  2.0- 3.0 sec  2.50 KBytes  20.5 Kbits/sec  49.890 ms    0/    2 (0%)
+[284]  3.0- 4.0 sec  2.50 KBytes  20.5 Kbits/sec  81.845 ms    0/    2 (0%)
+[284]  4.0- 5.0 sec  1.25 KBytes  10.2 Kbits/sec  108.412 ms    0/    1 (0%)
+[284]  5.0- 6.0 sec  2.50 KBytes  20.5 Kbits/sec  122.158 ms    0/    2 (0%)
+[284]  6.0- 7.0 sec  1.25 KBytes  10.2 Kbits/sec  148.228 ms    0/    1 (0%)
+[284]  7.0- 8.0 sec  1.25 KBytes  10.2 Kbits/sec  149.331 ms    0/    1 (0%)
+[284]  8.0- 9.0 sec  0.00 Bytes  0.00 bits/sec  149.331 ms    0/    0 (-1.$%)
+[284]  9.0-10.0 sec  0.00 Bytes  0.00 bits/sec  149.331 ms    0/    0 (-1.$%)
+[284] 10.0-11.0 sec  0.00 Bytes  0.00 bits/sec  149.331 ms    0/    0 (-1.$%)
+[284] 11.0-12.0 sec  1.25 KBytes  10.2 Kbits/sec  410.887 ms    0/    1 (0%)
+[284] 12.0-13.0 sec  7.50 KBytes  61.4 Kbits/sec  364.770 ms    0/    6 (0%)
+[284] 13.0-14.0 sec  1.25 KBytes  10.2 Kbits/sec  366.813 ms    0/    1 (0%)
+[284] 14.0-15.0 sec  1.25 KBytes  10.2 Kbits/sec  382.786 ms    3/    4 (75%)
+[284] 15.0-16.0 sec  2.50 KBytes  20.5 Kbits/sec  369.210 ms    0/    2 (0%)
+[284] 16.0-17.0 sec  2.50 KBytes  20.5 Kbits/sec  361.613 ms    0/    2 (0%)
+[284] 17.0-18.0 sec  1.25 KBytes  10.2 Kbits/sec  422.753 ms    5/    6 (83%)
+[284] 18.0-19.0 sec  1.25 KBytes  10.2 Kbits/sec  416.493 ms    0/    1 (0%)
+[284] 19.0-20.0 sec  2.50 KBytes  20.5 Kbits/sec  414.399 ms    0/    2 (0%)
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[284] 20.0-21.0 sec  1.25 KBytes  10.2 Kbits/sec  397.811 ms    0/    1 (0%)
+[284] 21.0-22.0 sec  2.50 KBytes  20.5 Kbits/sec  444.544 ms    5/    7 (71%)
+[284] 22.0-23.0 sec  0.00 Bytes  0.00 bits/sec  444.544 ms    0/    0 (-1.$%)
+[284] 23.0-24.0 sec  3.75 KBytes  30.7 Kbits/sec  454.525 ms    0/    3 (0%)
+[284] 24.0-25.0 sec  1.25 KBytes  10.2 Kbits/sec  506.099 ms    5/    6 (83%)
+[284] 25.0-26.0 sec  2.50 KBytes  20.5 Kbits/sec  485.948 ms    0/    2 (0%)
+[284] 26.0-27.0 sec  1.25 KBytes  10.2 Kbits/sec  470.643 ms    0/    1 (0%)
+[284] 27.0-28.0 sec  2.50 KBytes  20.5 Kbits/sec  491.672 ms    4/    6 (67%)
+[284] 28.0-29.0 sec  0.00 Bytes  0.00 bits/sec  491.672 ms    0/    0 (-1.$%)
+[284] 29.0-30.0 sec  0.00 Bytes  0.00 bits/sec  491.672 ms    0/    0 (-1.$%)
+[284] 30.0-31.0 sec  0.00 Bytes  0.00 bits/sec  491.672 ms    0/    0 (-1.$%)
+[284] 31.0-32.0 sec  0.00 Bytes  0.00 bits/sec  491.672 ms    0/    0 (-1.$%)
+[284] 32.0-33.0 sec  0.00 Bytes  0.00 bits/sec  491.672 ms    0/    0 (-1.$%)
+[284] 33.0-34.0 sec  8.75 KBytes  71.7 Kbits/sec  764.292 ms    8/   15 (53%)
+[284] 34.0-35.0 sec  2.50 KBytes  20.5 Kbits/sec  704.447 ms    0/    2 (0%)
+[284] 35.0-36.0 sec  1.25 KBytes  10.2 Kbits/sec  744.810 ms    5/    6 (83%)
+[284] 36.0-37.0 sec  2.50 KBytes  20.5 Kbits/sec  691.272 ms    0/    2 (0%)
+[284] 37.0-38.0 sec  1.25 KBytes  10.2 Kbits/sec  668.667 ms    0/    1 (0%)
+[284] 38.0-39.0 sec  1.25 KBytes  10.2 Kbits/sec  646.944 ms    0/    1 (0%)
+[284] 39.0-40.0 sec  2.50 KBytes  20.5 Kbits/sec  653.588 ms    6/    8 (75%)
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[284] 40.0-41.0 sec  1.25 KBytes  10.2 Kbits/sec  636.700 ms    0/    1 (0%)
+[284] 41.0-42.0 sec  2.50 KBytes  20.5 Kbits/sec  593.832 ms    0/    2 (0%)
+[284] 42.0-43.0 sec  2.50 KBytes  20.5 Kbits/sec  582.510 ms    4/    6 (67%)
+[284] 43.0-44.0 sec  0.00 Bytes  0.00 bits/sec  582.510 ms    0/    0 (-1.$%)
+[284] 44.0-45.0 sec  0.00 Bytes  0.00 bits/sec  582.510 ms    0/    0 (-1.$%)
+[284] 45.0-46.0 sec  0.00 Bytes  0.00 bits/sec  582.510 ms    0/    0 (-1.$%)
+[284] 46.0-47.0 sec  0.00 Bytes  0.00 bits/sec  582.510 ms    0/    0 (-1.$%)
+[284] 47.0-48.0 sec  6.25 KBytes  51.2 Kbits/sec  861.986 ms    8/   13 (62%)
+[284] 48.0-49.0 sec  2.50 KBytes  20.5 Kbits/sec  793.760 ms    0/    2 (0%)
+[284] 49.0-50.0 sec  1.25 KBytes  10.2 Kbits/sec  755.786 ms    0/    1 (0%)
+[284] 50.0-51.0 sec  1.25 KBytes  10.2 Kbits/sec  785.917 ms    5/    6 (83%)
+[284] 51.0-52.0 sec  2.50 KBytes  20.5 Kbits/sec  726.167 ms    0/    2 (0%)
+[284] 52.0-53.0 sec  2.50 KBytes  20.5 Kbits/sec  677.009 ms    0/    2 (0%)
+[284] 53.0-54.0 sec  1.25 KBytes  10.2 Kbits/sec  716.079 ms    5/    6 (83%)
+[284] 54.0-55.0 sec  1.25 KBytes  10.2 Kbits/sec  681.078 ms    0/    1 (0%)
+[284] 55.0-56.0 sec  0.00 Bytes  0.00 bits/sec  681.078 ms    0/    0 (-1.$%)
+[284] 56.0-57.0 sec  0.00 Bytes  0.00 bits/sec  681.078 ms    0/    0 (-1.$%)
+[284] 57.0-58.0 sec  0.00 Bytes  0.00 bits/sec  681.078 ms    0/    0 (-1.$%)
+[284] 58.0-59.0 sec  5.00 KBytes  41.0 Kbits/sec  985.142 ms   10/   14 (71%)
+[284] 59.0-60.0 sec  1.25 KBytes  10.2 Kbits/sec  943.788 ms    0/    1 (0%)
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[284] 60.0-61.0 sec  2.50 KBytes  20.5 Kbits/sec  859.401 ms    0/    2 (0%)
+[284] 61.0-62.0 sec  1.25 KBytes  10.2 Kbits/sec  827.033 ms    0/    1 (0%)
+[284] 62.0-63.0 sec  2.50 KBytes  20.5 Kbits/sec  813.352 ms    5/    7 (71%)
+[284] 63.0-64.0 sec  1.25 KBytes  10.2 Kbits/sec  778.340 ms    0/    1 (0%)
+[284] 64.0-65.0 sec  2.50 KBytes  20.5 Kbits/sec  722.125 ms    0/    2 (0%)
+[284] 65.0-66.0 sec  2.50 KBytes  20.5 Kbits/sec  721.382 ms    5/    7 (71%)
+[284] 66.0-67.0 sec  1.25 KBytes  10.2 Kbits/sec  708.917 ms    0/    1 (0%)
+[284] 67.0-68.0 sec  1.25 KBytes  10.2 Kbits/sec  676.366 ms    0/    1 (0%)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
