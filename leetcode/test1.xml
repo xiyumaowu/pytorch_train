@@ -1,0 +1,49 @@
+<edit-config>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <!-- ENodeBFunction configuration -->
+        <ENodeBFunction xmlns="urn:com:ericsson:ecim:ERBS_NODE_MODEL_D">
+	  <eNodeBFunctionId>1</eNodeBFunctionId>
+          <!-- EutranCellTDD configuration, rn_basic -->
+	 <!-- SectorCarrier configuration -->
+          <SectorCarrier>
+            <sectorCarrierId>1</sectorCarrierId>
+            <noOfRxAntennas>2</noOfRxAntennas>
+            <noOfTxAntennas>2</noOfTxAntennas>
+            <sectorFunctionRef>ManagedElement=1,NodeSupport=1,SectorEquipmentFunction=1</sectorFunctionRef>
+          </SectorCarrier>
+	  <EUtranCellTDD>
+            <eUtranCellTDDId>1</eUtranCellTDDId>
+            <earfcn>39150</earfcn>
+            <cellId>187</cellId>
+            <physicalLayerCellIdGroup>62</physicalLayerCellIdGroup>
+            <physicalLayerSubCellId>1</physicalLayerSubCellId>
+            <tac>1280</tac>
+            <sectorCarrierRef>ManagedElement=1,ENodeBFunction=1,SectorCarrier=1</sectorCarrierRef> 
+            <noOfPucchSrUsers>16</noOfPucchSrUsers>
+            <noOfPucchCqiUsers>16</noOfPucchCqiUsers>
+            <channelBandwidth>20000</channelBandwidth>
+            <subframeAssignment>1</subframeAssignment>
+            <specialSubframePattern>7</specialSubframePattern>
+            <frameStartOffset></frameStartOffset>
+            <changeNotification></changeNotification>
+            <mappingInfo></mappingInfo>
+            <siPeriodicity></siPeriodicity>
+            <systemInformationBlock6></systemInformationBlock6>
+            <systemInformationBlock7></systemInformationBlock7>
+            <systemInformationBlock8></systemInformationBlock8>
+            <systemInformationBlock3></systemInformationBlock3>
+            <eutranCellCoverage></eutranCellCoverage>
+            <timeOfLastModification></timeOfLastModification>
+            <acBarringForMoSignalling></acBarringForMoSignalling>
+            <acBarringForMoData></acBarringForMoData>
+            <ssacBarringForMMTELVoice></ssacBarringForMMTELVoice>
+            <ssacBarringForMMTELVideo></ssacBarringForMMTELVideo>
+            <acBarringForCsfb></acBarringForCsfb>
+            <acBarringPresence></acBarringPresence>
+          </EUtranCellTDD>
+        </ENodeBFunction>
+      </ManagedElement>
+    </config>
+  </edit-config>

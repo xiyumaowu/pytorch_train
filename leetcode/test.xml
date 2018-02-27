@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+ <capabilities>
+   <capability>urn:ietf:params:netconf:base:1.0</capability>
+ </capabilities>
+</hello>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc message-id="1" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<edit-config>
+   <config>
+     <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <Equipment>
+           <equipmentId>1</equipmentId>
+<!--
+    FieldReplaceableUnit=2
+-->
+	   <FieldReplaceableUnit>
+            <fieldReplaceableUnitId>2</fieldReplaceableUnitId>
+            <administrativeState>UNLOCKED</administrativeState>
+            <RfPort>
+              <rfPortId>A</rfPortId>
+              <administrativeState>UNLOCKED</administrativeState>
+            </RfPort>
+            <RfPort>
+              <rfPortId>B</rfPortId>
+              <administrativeState>UNLOCKED</administrativeState>
+            </RfPort>
+            <RiPort>
+              <riPortId>DATA_1</riPortId>
+            </RiPort>
+            <RiPort>
+              <riPortId>DATA_2</riPortId>
+            </RiPort>
+          </FieldReplaceableUnit>
+<!--
+    FieldReplaceableUnit=3
+-->
+	  <FieldReplaceableUnit>
+            <fieldReplaceableUnitId>3</fieldReplaceableUnitId>
+            <administrativeState>UNLOCKED</administrativeState>
+            <RfPort>
+              <rfPortId>A</rfPortId>
+              <administrativeState>UNLOCKED</administrativeState>
+            </RfPort>
+            <RfPort>
+              <rfPortId>B</rfPortId>
+              <administrativeState>UNLOCKED</administrativeState>
+            </RfPort>
+            <RiPort>
+              <riPortId>DATA_1</riPortId>
+            </RiPort>
+            <RiPort>
+              <riPortId>DATA_2</riPortId>
+            </RiPort>
+          </FieldReplaceableUnit>
+ 
+<!--
+  AntennaUnitGroup=1
+-->                
+          <AntennaUnitGroup>
+            <antennaUnitGroupId>1</antennaUnitGroupId>
+
+	    <AntennaUnit>
+	      <antennaUnitId>1</antennaUnitId>
+	      <AntennaSubunit>
+		<antennaSubunitId>1</antennaSubunitId>
+		<AuPort>
+		  <auPortId>1</auPortId>
+		  <userLabel>testLabel</userLabel>
+		</AuPort>
+	      </AntennaSubunit>
+	    </AntennaUnit>
+
+            <RfBranch>
+              <rfBranchId>1</rfBranchId>
+              <dlAttenuation>1</dlAttenuation>
+              <ulAttenuation>1</ulAttenuation>
+            </RfBranch>
+            <RfBranch>
+              <rfBranchId>2</rfBranchId>
+              <dlAttenuation>1</dlAttenuation>
+              <ulAttenuation>1</ulAttenuation>
+            </RfBranch>
+
+          </AntennaUnitGroup>
+<!--
+  AntennaUnitGroup=2
+-->  
+	  <AntennaUnitGroup>
+            <antennaUnitGroupId>2</antennaUnitGroupId>
+
+	    <AntennaUnit>
+	      <antennaUnitId>1</antennaUnitId>
+	      <AntennaSubunit>
+		<antennaSubunitId>1</antennaSubunitId>
+		<AuPort>
+		  <auPortId>1</auPortId>
+		  <userLabel>testLabel</userLabel>
+		</AuPort>
+	      </AntennaSubunit>
+	    </AntennaUnit>
+
+            <RfBranch>
+              <rfBranchId>1</rfBranchId>
+              <dlAttenuation>1</dlAttenuation>
+              <ulAttenuation>1</ulAttenuation>
+            </RfBranch>
+            <RfBranch>
+              <rfBranchId>2</rfBranchId>
+              <dlAttenuation>1</dlAttenuation>
+              <ulAttenuation>1</ulAttenuation>
+            </RfBranch>
+
+          </AntennaUnitGroup>
+                   
+        </Equipment>
+
+        <NodeSupport>
+            <nodeSupportId>1</nodeSupportId>
+<!--
+  SectorEquipmentFunction=1
+-->  
+            <SectorEquipmentFunction>
+              <sectorEquipmentFunctionId>1</sectorEquipmentFunctionId>
+              <administrativeState>UNLOCKED</administrativeState>
+            </SectorEquipmentFunction>
+<!--
+  SectorEquipmentFunction=2
+--> 
+	    <SectorEquipmentFunction>
+              <sectorEquipmentFunctionId>2</sectorEquipmentFunctionId>
+              <administrativeState>UNLOCKED</administrativeState>
+            </SectorEquipmentFunction>
+        </NodeSupport>
+     </ManagedElement>
+   </config>
+</edit-config>
+</rpc>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc message-id="2" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <target>
+      <running />
+    </target>
+    <config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <NodeSupport>
+          <nodeSupportId>1</nodeSupportId>
+          <MpClusterHandling>
+            <mpClusterHandlingId>1</mpClusterHandlingId>
+              <primaryCoreRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=1</primaryCoreRef>
+          </MpClusterHandling>
+        </NodeSupport>
+        <Equipment>
+          <equipmentId>1</equipmentId>
+
+<!--
+    FieldReplaceableUnit=1 refs
+-->
+          <FieldReplaceableUnit>
+            <fieldReplaceableUnitId>1</fieldReplaceableUnitId>
+            <RiPort>
+              <riPortId>A</riPortId>
+            </RiPort>
+	    <RiPort>
+              <riPortId>B</riPortId>
+            </RiPort>
+	    <RiPort>
+              <riPortId>C</riPortId>
+            </RiPort>
+          </FieldReplaceableUnit>
+
+	  
+<!--
+    FieldReplaceableUnit=2 refs
+-->
+          <FieldReplaceableUnit>
+            <fieldReplaceableUnitId>2</fieldReplaceableUnitId>
+            <RiPort>
+              <riPortId>DATA_1</riPortId>
+            </RiPort>
+
+          </FieldReplaceableUnit>
+
+<!--
+    FieldReplaceableUnit=3 refs
+-->
+
+	  <FieldReplaceableUnit>
+            <fieldReplaceableUnitId>3</fieldReplaceableUnitId>
+            <RiPort>
+              <riPortId>DATA_1</riPortId>
+            </RiPort>
+
+          </FieldReplaceableUnit>
+
+<!--
+    RiLink=1 refs
+-->
+    <RiLink>
+       <riLinkId>1</riLinkId>
+         <riPortRef1>ManagedElement=1,Equipment=1,FieldReplaceableUnit=1,RiPort=A</riPortRef1>
+         <riPortRef2>ManagedElement=1,Equipment=1,FieldReplaceableUnit=2,RiPort=DATA_1</riPortRef2>
+     </RiLink>
+<!--
+    RiLink=2 refs
+-->
+    <RiLink>
+       <riLinkId>2</riLinkId>
+         <riPortRef1>ManagedElement=1,Equipment=1,FieldReplaceableUnit=1,RiPort=B</riPortRef1>
+         <riPortRef2>ManagedElement=1,Equipment=1,FieldReplaceableUnit=3,RiPort=DATA_1</riPortRef2>
+     </RiLink>
+<!--
+
+    AntennaUnitGroup=1 refs
+-->
+          <AntennaUnitGroup>
+            <antennaUnitGroupId>1</antennaUnitGroupId>
+            <RfBranch>
+              <rfBranchId>1</rfBranchId>
+              <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=2,RfPort=A</rfPortRef>
+            </RfBranch>
+            <RfBranch>
+              <rfBranchId>2</rfBranchId>
+              <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=2,RfPort=B</rfPortRef>
+            </RfBranch>
+          </AntennaUnitGroup>
+<!--
+    AntennaUnitGroup=2 refs
+-->
+	  <AntennaUnitGroup>
+            <antennaUnitGroupId>2</antennaUnitGroupId>
+            <RfBranch>
+              <rfBranchId>1</rfBranchId>
+              <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=3,RfPort=A</rfPortRef>
+            </RfBranch>
+            <RfBranch>
+              <rfBranchId>2</rfBranchId>
+              <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=3,RfPort=B</rfPortRef>
+            </RfBranch>
+          </AntennaUnitGroup>
+
+        </Equipment>
+
+        <NodeSupport>
+            <nodeSupportId>1</nodeSupportId>
+<!--
+    SectorEquipmentFunction=1 refs
+-->
+        <SectorEquipmentFunction>
+          <sectorEquipmentFunctionId>1</sectorEquipmentFunctionId>
+          <mixedModeRadio>false</mixedModeRadio>
+          <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=1</rfBranchRef>
+          <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=2</rfBranchRef>
+        </SectorEquipmentFunction>
+<!--
+    SectorEquipmentFunction=2 refs
+-->
+	<SectorEquipmentFunction>
+          <sectorEquipmentFunctionId>2</sectorEquipmentFunctionId>
+          <mixedModeRadio>false</mixedModeRadio>
+          <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=2,RfBranch=1</rfBranchRef>
+          <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=2,RfBranch=2</rfBranchRef>
+        </SectorEquipmentFunction>
+        </NodeSupport>
+<!--
+    Transport=1 refs
+-->
+        <Transport> 
+          <transportId>1</transportId>
+          <Synchronization>
+            <synchronizationId>1</synchronizationId>
+            <TimeSyncIO xc:operation="create">
+              <timeSyncIOId>1</timeSyncIOId>
+              <encapsulation>ManagedElement=1,Equipment=1,FieldReplaceableUnit=1,SyncPort=1</encapsulation>
+              <GnssInfo xc:operation="create">
+              <gnssInfoId>1</gnssInfoId>
+              </GnssInfo>
+            </TimeSyncIO>
+          </Synchronization>
+        </Transport>
+
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc message-id="6" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <target>
+      <running/>
+    </target>
+    <config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <ManagedElement>
+      <managedElementId>1</managedElementId>
+      <Transport>
+        <transportId>1</transportId>
+        <Synchronization>
+          <synchronizationId>1</synchronizationId>
+          <RadioEquipmentClock xc:operation="create">
+            <radioEquipmentClockId>1</radioEquipmentClockId>
+            <minQualityLevel>
+              <qualityLevelValueOptionI>PRC</qualityLevelValueOptionI>
+              <qualityLevelValueOptionIII>UNK</qualityLevelValueOptionIII>
+              <qualityLevelValueOptionII>STU</qualityLevelValueOptionII>
+            </minQualityLevel>
+          </RadioEquipmentClock>
+        </Synchronization>
+      </Transport>
+    </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc message-id="7" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <target>
+      <running/>
+    </target>
+    <config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <ManagedElement>
+      <managedElementId>1</managedElementId>
+      <Transport>
+        <transportId>1</transportId>
+        <Synchronization>
+          <synchronizationId>1</synchronizationId>
+          <RadioEquipmentClock>
+            <radioEquipmentClockId>1</radioEquipmentClockId>
+            <RadioEquipmentClockReference xc:operation="create">
+              <radioEquipmentClockReferenceId>1</radioEquipmentClockReferenceId>
+              <encapsulation>ManagedElement=1,Transport=1,Synchronization=1,TimeSyncIO=1</encapsulation>
+              <adminQualityLevel>
+                <qualityLevelValueOptionI>PRC</qualityLevelValueOptionI>
+                <qualityLevelValueOptionIII>UNK</qualityLevelValueOptionIII>
+                <qualityLevelValueOptionII>STU</qualityLevelValueOptionII>
+              </adminQualityLevel>
+              <priority>1</priority>
+	      <administrativeState>UNLOCKED</administrativeState>      
+            </RadioEquipmentClockReference>
+          </RadioEquipmentClock>
+        </Synchronization>
+      </Transport>
+    </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc message-id="8" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session/>
+</rpc>
+
